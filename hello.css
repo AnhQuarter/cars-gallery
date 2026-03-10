@@ -5,9 +5,8 @@
     margin-bottom: 80px;
 
     img {
-        /* width: 70%; */
-        /* height: 600px; */
-        height: 80vh;
+      
+        /* height: 80vh; */
         object-fit: cover;
         object-position: center;
 
@@ -25,5 +24,23 @@
         height: 200px;
         object-fit: cover;
         object-position: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #main-img img {
+        max-width: 100%;
+        width: initial;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    #main-img img {
+        height: 80vh;
     }
 }
